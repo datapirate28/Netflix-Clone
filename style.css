@@ -255,3 +255,50 @@ input{
 .btn{
     border: none;
 }
+
+/* Footer */
+
+.footer{
+    background-color: black;
+    color: white;
+    font-family: 'Martel Sans', sans-serif;
+    padding: 6rem 0;
+}
+
+.f-header{
+    text-decoration: underline;
+    font-family: 'Martel Sans', sans-serif;
+    font-size: 0.9rem;
+}
+
+
+.item p {
+    font-size: 0.8rem;
+    font-family: 'Martel Sans';
+    text-decoration: underline;
+    line-height: 2.2;
+}
+
+.footer-items{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+
+.itemfour{
+    width: 20%;
+}
+
+
+.language2{
+    width: 150px;
+    margin-top: 15px;
+}
+
+.footer-bottom{
+    font-size: 0.8rem;
+    font-family: 'Martel Sans';
+    line-height: 2.2;
+    margin-top: 15px;
+}
