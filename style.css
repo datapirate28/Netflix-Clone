@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -100,6 +102,7 @@ main .box{
     align-items: center;
     position: relative;
     color: aliceblue;
+    text-align: center;
 }
 
 .hero-heading{
@@ -111,10 +114,12 @@ main .box{
 .hero-p{
     font-size: 1.48rem;
     line-height: 2.5;
+    font-family: "Poppins", sans-serif;
 }
 
 .hero-d{
     font-size: 1.3rem;
+    font-family: "Poppins", sans-serif;
 }
 
 .hero-form{
@@ -142,4 +147,111 @@ input{
     font-weight: 700;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+}
+
+.separation{
+    height: 8px;
+    background-color: rgb(40, 40, 40);
+}
+
+
+/* Part One */
+
+.part-one{
+    width: 100%;
+    background-color: black;
+    color: aliceblue;
+    padding: 5rem 0;
+}
+
+.part-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part-img{
+    position: relative;
+}
+
+.part-img img{
+    width: 70vh;
+    z-index: 10;
+    position: relative;
+}
+
+.part-img video{
+    position: absolute;
+    top: 70px;
+    right: 0;
+    left: 73px;
+    width: 450px;
+}
+
+.part-heading{
+    font-size: 3rem;
+    font-family: 'Martel Sans', sans-serif;
+    font-weight: 900;
+    line-height: 1.4;
+}
+
+.part-p{
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 5px;
+}
+
+.part3 > img + video{
+    width: 350px;
+    left: 100px;
+}
+
+
+/* Part Two */
+
+.part-two{
+    background-color: black;
+    color: white;
+    padding: 5rem 0;
+}
+
+.part-two-heading{
+    font-size: 3rem;
+    font-family: 'Martel Sans', sans-serif;
+    font-weight: 900;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.questions{
+    display: flex;
+    margin-top: 15px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.question{
+    padding:  0 2rem;
+    height: 86px;
+    background-color: #2d2d2d;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.question p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.parttwo{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.2rem;
+}
+
+
+.btn{
+    border: none;
 }
