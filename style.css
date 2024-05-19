@@ -168,6 +168,11 @@ input{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.part-texts{
+    width: 40%;
 }
 
 .part-img{
@@ -175,7 +180,7 @@ input{
 }
 
 .part-img img{
-    width: 70vh;
+    width: 555px;
     z-index: 10;
     position: relative;
 }
@@ -256,6 +261,10 @@ input{
     border: none;
 }
 
+.question:hover{
+    background-color: #505050;
+}
+
 /* Footer */
 
 .footer{
@@ -301,4 +310,161 @@ input{
     font-family: 'Martel Sans';
     line-height: 2.2;
     margin-top: 15px;
+}
+
+
+
+/* Media Queries */
+
+@media (max-width: 924px){
+    .part-items{
+        padding: 0 1rem;
+    }
+
+    .part-texts{
+        margin-bottom: 1rem
+    }
+
+    .part-img{
+        margin-bottom: 2rem;
+    }
+
+    .part-texts{
+        width: 100%;
+    }
+
+    .part-heading{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .part-p{
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .part-two-heading{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 555px){
+    .part-img img{
+        width: 450px;
+    }
+
+    .part-img video{
+        width: 350px;
+        left: 60px;
+    }
+
+    .part3 > img + video{
+        width: 280px;
+        left: 80px;
+        top: 30px;
+    }
+}
+
+@media (max-width: 606px){
+
+    .hero-heading{
+        font-size: 2rem;
+        width: 80%;
+    }
+
+    .hero-p, .hero-d{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .hero-form{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 449px){
+    .part-img img{
+        width: 100%;
+    }
+
+    .part-img video{
+        width: 80%;
+        left: 50px;
+        top: 60px;
+    }
+
+    .part3 > img + video{
+        width: 65%;
+        left: 70px;
+        top: 40px;
+    }
+}
+
+@media (max-width: 400px){
+    .language{
+        display: none;
+    }
+
+    .hero-form input{
+        width: 300px;
+    }
+
+    .hero-heading{
+        font-size: 1.6rem;
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 350px){
+    .hero-p, .hero-d{
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 302px){
+    .hero-form input{
+        width: 250px;
+        font-size: 0.99rem;
+        text-align: center;
+        padding-right: 0;
+        text-align: center;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 1125px){
+    .navbar{
+        padding: 0 4rem;
+    }
+
+    .footer{
+        padding: 4rem 5rem;
+    }
+}
+
+@media (max-width: 524px){
+    .language{
+        display: none;
+    }
+}
+
+@media (max-width: 398px){
+    .navbar{
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 570px){
+    .footer-items{
+        display: grid;
+        grid-template-columns:  1fr 1fr;
+        gap: 20px;
+    }
 }
